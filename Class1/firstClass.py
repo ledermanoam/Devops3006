@@ -19,6 +19,7 @@ print(second/first)
 a = 9
 b = 8
 c = 15
+d= 37
 
 # convert int to string to print
 my_number = 5 + 5
