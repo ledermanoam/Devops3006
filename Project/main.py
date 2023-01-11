@@ -14,5 +14,5 @@ def welcome_to_game():
 #except:
 #print("Error call functions")
 
-welcome_to_game()
+ welcome_to_game()
 

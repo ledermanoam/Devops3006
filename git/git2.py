@@ -1,2 +1,0 @@
-print("noam")
-# print name
