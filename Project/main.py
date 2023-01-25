@@ -1,18 +1,32 @@
-from Live import welcome, load_game,game_chosen,game_difficulty
+from Live import welcome, load_game, game_chosen, game_difficulty,display
 
-def welcome_to_game():
-# try:
- name = input("Please insert your name: ")
- welcome(name)
- wins = 0
+welcome()
+
+load_game()
+
+game_difficulty()
 
 
- load_game()
- difficulty = game_difficulty()
- wins = wins + game_chosen(difficulty)
+game_chosen()
 
-#except:
-#print("Error call functions")
 
- welcome_to_game()
+#difficulty = game_difficulty
+
+
+
+
+
+
+
+
+
+
+
+ #def load_game(wins=None):
+  #difficulty = game_difficulty()
+  #wins = wins + game_chosen(difficulty)
+
+
+
+
 
