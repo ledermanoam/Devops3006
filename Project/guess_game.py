@@ -2,7 +2,7 @@ from Live import welcome, load_game, game_chosen, game_difficulty,display
 from random import randint
 from Live import display
 
-#difficulty !!!!!!!!!11
+#difficulty !!!!!!!!
 
 def guess_game(game_level):
     generated_number = randint(1,game_level)
