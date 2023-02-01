@@ -39,7 +39,5 @@ def game_chosen(): # add int(input) to change to int
     elif game_name == 3:
         game_name = "Currency Roulette"
         print("you choose to play in" + " " + game_name)
-        
-
 
 

@@ -1,5 +1,5 @@
 import random,time
-import Live
+
 def mem_game(game_level):
     #digits = int(input('How many digit do you want to guess ?'))
     print("you need to remember number with " + game_level )
