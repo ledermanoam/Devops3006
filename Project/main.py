@@ -7,13 +7,17 @@ welcome()
 
 load_game()
 
-game_difficulty()
+game_level = game_difficulty()
 
 game_chosen()
 
-guess_game()
+number_of_games = 3
+wins = 0
 
+for i in range(number_of_games):
+    wins = wins + guess_game(game_level)
 
+print("You won", wins, "games")
 
 
 
