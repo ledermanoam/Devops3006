@@ -1,6 +1,6 @@
-from Live import welcome, load_game, game_chosen, game_difficulty,display
+
 from random import randint
-from Live import display
+
 
 #difficulty !!!!!!!!
 

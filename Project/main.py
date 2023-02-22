@@ -2,20 +2,21 @@
 import guess_game
 from Project.Live import welcome,load_game,game_difficulty,game_chosen
 from guess_game import guess_game
+from MemoryGame import  mem_game
 
 welcome()
 
 load_game()
 
 game_level = game_difficulty()
+game_name = int(input("What game you choose? "))
 
-game_chosen()
 
 number_of_games = 3
 wins = 0
 
 for i in range(number_of_games):
-    wins = wins + guess_game(game_level)
+    wins = wins + game_chosen(game_level,game_name)
 
 print("You won", wins, "games")
 

@@ -1,6 +1,7 @@
 import guess_game
 import MemoryGame
 
+
 def welcome():
     name = input("Please insert your name: ")
     print("Hello" + " " + name + " " + "and welcome to the world game...")
@@ -24,22 +25,19 @@ def game_difficulty():
 
 
 def display(game_level):
-    print("the level will be :" + str(game_level))
+    return game_level
 
 
-def game_chosen(): # add int(input) to change to int
-    game_name = int(input("What game you choose? "))
+def game_chosen(game_level,game_name): # add int(input) to change to int
     if game_name == 1:
         game_name = "Memory game"
         print("you choose to play in", game_name)
-        #return MemoryGame.mem_game(game_level)
-        #print("Error...")
+        return MemoryGame.mem_game(game_level)
     elif game_name == 2:
         game_name = "Guess Game"
         print("you choose to play in", game_name)
-        #return guess_game.guess_game(game_level)
+        return guess_game.guess_game(game_level)
     elif game_name == 3:
         game_name = "Currency Roulette"
         print("you choose to play in", game_name)
-
-
+        return guess_game.guess_game(game_level)
