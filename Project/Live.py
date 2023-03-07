@@ -1,5 +1,6 @@
 import guess_game
 import MemoryGame
+from Project import guess_USD_rate
 
 
 def welcome():
@@ -12,7 +13,7 @@ def load_game():
           " 1.   Memory Game - a sequence of numbers will appear for 1 second and you have to" + " " + " "+
           "guess it back"   
           " 2.   Guess Game - guess a number and see if you chose like the computer"
-          " 3.   Currency Roulette - try and guess the value of a random amount of USD in ILS")
+          " 3.   Guess the dollar rate - try and guess the value of a random amount of USD in ILS")
 
 def game_difficulty():
     try:
@@ -38,6 +39,6 @@ def game_chosen(game_level,game_name): # add int(input) to change to int
         print("you choose to play in", game_name)
         return guess_game.guess_game(game_level)
     elif game_name == 3:
-        game_name = "Currency Roulette"
+        game_name = "Guess the dollar rate"
         print("you choose to play in", game_name)
-        return guess_game.guess_game(game_level)
+        return guess_USD_rate.guess_dollar_rate(game_level)

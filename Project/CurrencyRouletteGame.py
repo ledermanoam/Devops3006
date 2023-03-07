@@ -1,10 +1,15 @@
 import requests
+def call_exchangerates():
 
-r = requests.get('https://imgs.xkcd.com/comics/python.png')
+ url = "https://anyapi.io/api/v1/exchange/convert?base=USD&to=ILS&amount=1&apiKey=kmgperaohggrli9rpdpi0gdsjpobu5angf7r7b5rabb4o19god6ul8"
 
-with open('comic.png', 'wb') as f:
-    f.write(r.content)
+ payload = {}
+ headers = {}
 
-print(r.headers)
+ response = requests.request("GET", url, headers=headers, data=payload)
+ json_response = response.json()
+ print(json_response["converted"])
+ return json_response["converted"]
 
-s = requests.get
+ call_exchangerates()
+

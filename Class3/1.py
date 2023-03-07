@@ -3,9 +3,8 @@ def fun1():
     print(fun1.var)
 
 def fun2():
-    print(fun1.var)
+    return fun1()
 
 fun1()
 fun2()
 
-print(fun1.var)

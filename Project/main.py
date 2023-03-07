@@ -3,6 +3,7 @@ import guess_game
 from Project.Live import welcome,load_game,game_difficulty,game_chosen
 from guess_game import guess_game
 from MemoryGame import  mem_game
+from CurrencyRouletteGame import call_exchangerates
 
 welcome()
 
@@ -19,6 +20,8 @@ for i in range(number_of_games):
     wins = wins + game_chosen(game_level,game_name)
 
 print("You won", wins, "games")
+
+
 
 
 
