@@ -3,7 +3,6 @@ import random,time
 
 
 def mem_game(game_level):
-    #digits = int(input('How many digit do you want to guess ?'))
     print("you need to remember number with " +str(game_level) )
     sequence = []
     for i in range(0,game_level):

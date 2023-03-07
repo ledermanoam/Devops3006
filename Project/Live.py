@@ -1,6 +1,6 @@
 import guess_game
 import MemoryGame
-from Project import guess_USD_rate
+import guess_USD_rate
 
 
 def welcome():

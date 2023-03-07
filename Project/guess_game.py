@@ -1,8 +1,5 @@
-
 from random import randint
 
-
-#difficulty !!!!!!!!
 
 def guess_game(game_level):
     generated_number = randint(1,game_level)
