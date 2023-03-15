@@ -11,5 +11,5 @@ def call_exchangerates():
  print(json_response["converted"])
  return json_response["converted"]
 
- call_exchangerates()
+
 

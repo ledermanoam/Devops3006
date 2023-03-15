@@ -1,7 +1,7 @@
-from Live import welcome, load_game, game_chosen, game_difficulty,display
+#from Live import welcome, load_game, game_chosen, game_difficulty,display
 import random,time
 
-
+score = 0
 def mem_game(game_level):
     print("you need to remember number with " +str(game_level) )
     sequence = []
@@ -20,6 +20,6 @@ def mem_game(game_level):
             print("correct")
         else:
             print("wrong")
-            return 0
+            return (0, 0)
     print(sequence)
-    return 1
+    return (1, score)

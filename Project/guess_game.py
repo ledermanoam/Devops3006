@@ -1,6 +1,6 @@
 from random import randint
 
-
+score = 0
 def guess_game(game_level):
     generated_number = randint(1,game_level)
     guess = 0
@@ -17,10 +17,10 @@ def guess_game(game_level):
             print("too low")
         else:
             print("correct, you won by " + str(guesses + 1) + " tries")
-            return 1
+            return (1, score)
 
         guesses = guesses + 1
 
         if(guesses >= 3):
             print("you lost, more than 3 tries")
-            return 0
+            return (0,0)

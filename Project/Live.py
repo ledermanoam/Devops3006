@@ -41,4 +41,4 @@ def game_chosen(game_level,game_name): # add int(input) to change to int
     elif game_name == 3:
         game_name = "Guess the dollar rate"
         print("you choose to play in", game_name)
-        return guess_USD_rate.guess_dollar_rate(game_level)
+        return guess_USD_rate.play(game_level)
